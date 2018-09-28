@@ -10,10 +10,16 @@ public class UsuarioController {
 
     private final Logger logger = LoggerFactory.getLogger(UsuarioController.class);
 
-    @RequestMapping("/usuarios")
-    public String GetUsuario() {
-        logger.info("This is an info message");
-        return "hahahah";
+    @RequestMapping("/inicio")
+    public String CriaInicioChamada() {
+        logger.info("INICIO CHAMADA");
+        return "INICIO CHAMADA";
+    }
+
+    @RequestMapping("/fim")
+    public String CriaFimChamada() {
+        logger.info("FIM CHAMADA");
+        return "FIM CHAMADA";
     }
 
 }
